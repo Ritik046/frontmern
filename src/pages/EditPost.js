@@ -23,7 +23,7 @@ const EditPost = () => {
     const [redirect,setRedirect] = useState(false);
 
     useEffect(()=>{
-        fetch('https://backmern-1.onrender.com/'+id)
+        fetch('https://backmern-2.onrender.com/'+id)
         .then(response => {
             response.json().then(postInfo => {
                 setTitle(postInfo.title);
@@ -43,7 +43,7 @@ const EditPost = () => {
         if(files?.[0]){
             data.set('file', files?.[0]);
         }
-        const response = await fetch('https://backmern-1.onrender.com/post',{
+        const response = await fetch('https://backmern-2.onrender.com/post',{
             method: 'PUT',
             body: data,
             credentials: 'include',

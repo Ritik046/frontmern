@@ -6,7 +6,7 @@ const Header = () => {
   const {setUserInfo, userInfo} = useContext(UserContext);
 
   useEffect(()=> {
-    fetch('https://backmern-1.onrender.com/profile',{
+    fetch('https://backmern-2.onrender.com/profile',{
       credentials: 'include'
     }).then(response =>{
         response.json().then(userInfo =>{
@@ -16,7 +16,7 @@ const Header = () => {
   }, [])
 
   const logout = ()=>{
-    fetch('https://backmern-1.onrender.com/logout',{
+    fetch('https://backmern-2.onrender.com/logout',{
       credentials: 'include',
       method: 'POST',
     });

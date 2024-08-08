@@ -8,7 +8,7 @@ const PostPage = () => {
     const {userInfo} = useContext(UserContext);
     const {id} = useParams();
     useEffect(()=>{
-        fetch(`https://backmern-1.onrender.com/${id}`)
+        fetch(`https://backmern-2.onrender.com/${id}`)
         .then(response => {
             response.json().then(postInfo => {
                 setPostInfo(postInfo);
@@ -35,7 +35,7 @@ const PostPage = () => {
         </div>
       )}
       <div className="image">
-        <img src={`https://backmern-1.onrender.com/${postInfo.cover}`} alt="" />
+        <img src={`https://backmern-2.onrender.com/${postInfo.cover}`} alt="" />
       </div>
       <div className='content' dangerouslySetInnerHTML={{__html:postInfo.content}}/>
     </div>

@@ -10,7 +10,7 @@ const LoginPage = () => {
 
   const login = async (ev)=>{
     ev.preventDefault();
-    const response = await fetch('https://backmern-1.onrender.com/login',{
+    const response = await fetch('https://backmern-2.onrender.com/login',{
       method: 'POST',
       body: JSON.stringify({username,password}),
       headers: {'Content-Type':'application/json'},
